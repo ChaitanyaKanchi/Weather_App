@@ -83,8 +83,8 @@ if place:
                 st.write(get_suggestions(pressure=nearest_pressure))
 
         elif option == "Sky":
-            images = {"Clear": "images/clear.png", "Clouds": "images/cloud.png",
-                      "Rain": "images/rain.png", "Snow": "images/snow.png"}
+            images = {"Clear": "https://raw.githubusercontent.com/ChaitanyaKanchi/Weather_App/main/clear.png", "Clouds": "https://github.com/ChaitanyaKanchi/Weather_App/blob/main/cloud.png?raw=true",
+                      "Rain": "https://github.com/ChaitanyaKanchi/Weather_App/blob/main/rain.png?raw=true", "Snow": "https://github.com/ChaitanyaKanchi/Weather_App/blob/main/snow.png?raw=true"}
             sky_conditions = [entry["weather"][0]["main"] for entry in filtered_data]
             dates = [entry["dt_txt"] for entry in filtered_data]
             image_paths = [images.get(condition, "images/default.png") for condition in sky_conditions]
